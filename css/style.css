@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("https://promo.com/tools/image-resizer/static/Pattern_image-8c050053eab884e51b8599607865d112.jpg");
+    background-size: cover;
+}
+
+.container{
+    width: 50%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.7em;
+    color: white;
+}
+

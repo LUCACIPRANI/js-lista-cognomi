@@ -1,9 +1,8 @@
-// Esercizio Lista cognomi :
-
+//  Esercizio Lista cognomi :
 
 var cognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
     console.log("Lista: " + cognomi);
-var cognomeInserito = prompt("Inserisci il tuo cognome "); 
+var cognomeInserito = prompt("Inserisci il tuo cognome ", "marroni"); 
 
 //  1. chiedi all’utente il cognome;
 cognomi.push(cognomeInserito);
@@ -15,6 +14,7 @@ console.log("Inserisco il cognome richiesto all'utente: " + cognomi);
 
 for(var i = 0; i < cognomi.length; i++) {
     cognomi[i] = cognomi[i].toUpperCase();
+    cognomeInserito = cognomeInserito.toUpperCase();
 }
 
 cognomi.sort();
@@ -30,3 +30,4 @@ for(var i = 0; i < cognomi.length; i++) {
 var idx = cognomi.indexOf(cognomeInserito) + 1;
     console.log(idx);
 
+document.getElementById("indexO").innerHTML = idx;
